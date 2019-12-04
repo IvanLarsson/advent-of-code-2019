@@ -15,9 +15,14 @@ with open(inputFile) as f:
         value2 = result[i+2]
         newPos = result[i+3]   
 
+        if (100 * (value1 + value2)) == 19690720 : 
+            print("found shit")
+
+
         if cmd == 1 :
             result[newPos] = result[value1] + result[value2]
         elif cmd == 2 :
             result[newPos] = result[value1] * result[value2] 
+
 
     print(result[0])
